@@ -1,0 +1,19 @@
+<center><h1 class="display-1" >Estos son los productos disponibles</h1></center>
+<div class="row">
+    <% if (productos.length > 0) { %>
+    <% for (var i = 0; i < productos.length; i++) { %>
+    <div class="col-sm-3">
+        <div class="card text-center">
+            <img src="<%- productos[i].thumbnail %>" class="card-img-top">s
+            <h2 class="card-title"><b> <%- productos[i].title %> </b></h2>
+            <h3 class="card-text"><%- productos[i].price %> </h3>
+            <a href="/comprar/<%- productos[i].id %>" class="btn btn-primary">Comprar</a>
+        </div>
+    </div>
+    <% } %>
+    <%}
+    else { %>
+        <p> No hay productos disponibles </p>
+        <% } %>
+        
+    </div>

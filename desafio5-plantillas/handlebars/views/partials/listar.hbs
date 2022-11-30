@@ -1,0 +1,13 @@
+<div class="row">
+{{#each listaProductos}}
+<div class="col-sm-3">
+    <div class="card text-center">
+        <img src={{thumbnail}} class="card-img-top">
+        <h2 class="card-title"><b>{{title}}</b></h2>
+        <h3 class="card-text">${{price}}</h3>
+        <a href="/comprar/{{this.id}}" class="btn btn-primary">Comprar</a>
+    </div>
+</div>
+{{/each}}
+    
+</div>

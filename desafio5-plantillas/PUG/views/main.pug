@@ -1,0 +1,12 @@
+extends layout.pug
+block content
+    h1(class="display-1") Bienvenido a la Tienda en Pug
+    form(action='/productos', method='POST')
+        p
+            | Nombre: 
+            input(name='title', value='', type='text' class="form-control form-control-lg")
+            | Precio: 
+            input(name='price', value='', type='text' class="form-control form-control-lg" )
+            | Url Imagen: 
+            input(name='thumbnail', value='', type='text' class="form-control form-control-lg")
+        input(value='Submit', type='submit' class="btn btn-primary mb-3")

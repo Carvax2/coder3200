@@ -1,0 +1,14 @@
+extends layout.pug
+block content
+
+    h1(class="display-1" text-align="center") Estos son los productos disponibles
+    div(class="row")
+        each producto in productos
+            div(class="col-sm-3")
+                div(class="card text-center")
+                    img(src=producto.thumbnail class="card-img-top")
+                    h2(class="card-title")= producto.title
+                    h3(class="card-text")= producto.price
+                    a(href="/comprar/" class="btn btn-primary") comprar
+        else 
+            li No hay productos
