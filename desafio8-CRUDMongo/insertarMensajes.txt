@@ -1,0 +1,53 @@
+db.mensajes.insertMany([
+  {
+    "email": "Brandon.Aponte@nearbpo.com",
+    "mensaje": "Engarce Descenso Batalloso Cendradilla Generalidad Descentrar Descentralización Cendra.",
+    "hora": "2022-08-31T20:43:33.605Z"
+  },
+  {
+    "email": "Ins.Pez34@corpfolder.com",
+    "mensaje": "Descercador Cencuate Cencío Batata Ceñar Batavia Incorrupto.",
+    "hora": "2022-08-31T14:37:25.394Z"
+  },
+  {
+    "email": "Conchita_Irizarry76@gmail.com",
+    "mensaje": "Batallaroso Abajeño Descifrable Batallar Descenso Incorregiblemente Incrustación.",
+    "hora": "2022-08-31T05:19:29.036Z"
+  },
+  {
+    "email": "Csar78@corpfolder.com",
+    "mensaje": "Cencerrada Engarnio Genearca Genealógico Batallona Cenegar Incorrupción.",
+    "hora": "2022-08-31T17:38:48.208Z"
+  },
+  {
+    "email": "Alicia23@corpfolder.com",
+    "mensaje": "Gen Descercar Abajera Descerar Incorrupto.",
+    "hora": "2022-08-31T22:06:01.011Z"
+  },
+  {
+    "email": "Barbara_Orosco99@nearbpo.com",
+    "mensaje": "Basural Cencapa Ceneque Fideo Abadengo Gemir.",
+    "hora": "2022-08-31T09:26:42.035Z"
+  },
+  {
+    "email": "Isaias.Bustos88@corpfolder.com",
+    "mensaje": "Engarzadura Cencerrón Genealogía Cendrado Descervigamiento Gemiqueo Incorregibilidad.",
+    "hora": "2022-08-31T11:02:32.138Z"
+  },
+  {
+    "email": "Alexis.Carrasquillo77@gmail.com",
+    "mensaje": "Engarnio Increado Descerebración Engarbarse Descervigar Descifre Fichar Incredibilidad Incorporal Gemiquear.",
+    "hora": "2022-08-31T09:23:00.299Z"
+  },
+{
+  "email": "Lucia.Miranda84@corpfolder.com",
+  "mensaje": "Gendarmería Batanero Descifre Gemonias Cencuate Abalaustrado. Abajo Batalloso Engasgarse.",
+  "hora": "2022-02-13T02:27:46.079Z"
+},
+{
+  "email": "Lorenzo_Rincn@hotmail.com",
+  "mensaje": "Engarce Abadiato Cencerrada Geminado Engarbullar Incorporación Incorrecto Descerebración Céndea.",
+  "hora": "2022-08-31T16:38:49.144Z"
+},
+
+])

@@ -1,0 +1,38 @@
+1. En Base de datos, se adjunta json de productos y mensajes
+2. En base de datos, se adjunta json de productos y mensajes
+
+3. db.productos.find()
+   db.mensajes.find()
+
+4. db.productos.countDocuments({title:{$exists:true}})
+   db.mensajes.countDocuments({email:{$exists:true}})
+
+5. 
+ A. db.productos.insertOne({"title": "Figurita","price": 4300,"thumbnail":"http://loremflickr.com/640/480"})
+ B. db.productos.find({title:Escuadra})
+  i) db.productos.find({"price":{$lt:'1000'}})
+  ii) db.productos.find({"price":{$in:[1000,3000]}})
+  iii) db.productos.find({"price":{$in:[1000,3000]}})
+  iv) db.products.find().sort({price:1}).limit(1).skip(2)
+
+ C. db.productos.updateMany({title:{$exists:true}},{$set: {stock:100}},{upsert:true})
+
+ D. db.productos.updateMany({price: {$gt: 4000}},{$set: {stock: 0}})
+
+ E. db.productos.remove({price:{$lt:1000}})
+
+6. 
+ const MongoClient = require('mongodb').MongoClient;
+ const url = "mongodb://localhost:27017/";
+
+ MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("ecommerce");
+  dbo.addUser("pepe", "asd456", {
+    roles: [{ role: "read", db: "ecommerce" }]
+  });
+  db.close();
+ });
+
+
+
